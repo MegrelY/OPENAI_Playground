@@ -3,6 +3,7 @@ from openai import OpenAI
 
 # Initialize the client with your API key
 client = OpenAI()
+
 # Read prompt from a file named 'prompt.txt'
 with open('input.txt', 'r' ,encoding='utf8') as file:
     user_prompt = file.read().strip()  # Strip any trailing newline or spaces
